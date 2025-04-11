@@ -73,6 +73,5 @@ function add(a, b) {
         console.log("Multiplication of c and d is " + e);
     }
 }
-
 var multiply = add(3, 5); // add() runs and returns the inner function
 multiply(10);             // now we use the closure
