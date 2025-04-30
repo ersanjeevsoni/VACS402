@@ -14,3 +14,50 @@ Anonymous Function
 11th Apr 25
 Anonymous Function
 Callback Function
+
+16th Apr 2025
+Class and Maps, Temp Literals
+
+23rd Apr 2025
+Rest and Spread Operator
+WAP to display the name using callback function after 2seconds.
+WAP to display the name, age, city and course using the class.
+WAP to check who is eligble to caste the vote in the given array
+ while vote casting min age is 18.
+ let arr=[
+    {
+    name:"Abahy",
+    age:18
+    },
+    {
+        name:"Akash",
+        age:24,
+    },
+    {
+        name:"Neha",
+        age:19
+    },
+    {
+        name:"Priyanshu",
+        age:16
+    },
+    {
+        name:"Priya",
+        age:18
+    }
+      ]
+
+WAP to check the in the given array which no is odd or even.
+let arr=[2,3,45,4,53,45,50,44,78,78,0,23,54,32,21,29]
+and find the sum of array using spread operator.
+
+
+WAP to calculate the sum and average for the given array using rest operator.
+
+function cal(){
+
+}
+cal(2,3,45,4,53,45,50,44,78,78,0,23,54,32,21,29)
+
+30th Apr
+GEC and Call or Fetch API
