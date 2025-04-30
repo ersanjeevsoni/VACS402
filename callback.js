@@ -30,7 +30,7 @@ setTimeout(second,2000);
 third() */;
 
 //second way
-function first(){
+/* function first(){
     console.log("Print First");
 }
 
@@ -41,12 +41,12 @@ first();
 setTimeout(function second(){
     console.log("Print Second");
 },2000);
-third()
+third() */
 
 //third
 
 //second way
-function first(){
+/* function first(){
     console.log("Print First");
 }
 
@@ -56,18 +56,8 @@ function third(){
 first();
 setTimeout(()=>{
     console.log("Print Second");
-},2000);
-third()
-
-
-
-
-
-
-
-
-
-
+},2000); 
+third() */
 
 
 //normal function
@@ -105,3 +95,15 @@ function calculation(a,b, cb){
     cb(sum);
 }
 calculation(4,3,display); */
+
+/* const arr=['a','b','c','d','e']
+const cb=(ele,indx)=>{
+    console.log(ele,indx)
+}
+arr.forEach(cb); */
+
+ //================in this case , we can pass directly call back defination to foreach==================
+ const arr=['a','b','c','d']
+  arr.forEach((ele,indx)=>{
+    console.log(ele,indx)
+})

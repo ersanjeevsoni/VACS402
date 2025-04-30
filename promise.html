@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #display {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px saddlebrown solid;
+            padding: 5px;
+        }
+
+        .card-title {
+            margin: 0 auto;
+            background-image: linear-gradient(rgb(208, 195, 195), rgb(222, 219, 219));
+            padding: 5px;
+        }
+
+        .card-img {
+            width: 150px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .card-img img {
+            border-radius: 50%;
+        }
+
+        nav {
+            margin: 10px auto;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        nav input {
+            padding: 5px;
+            width: 260px; margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display">
+        <h1>Id Card</h1>
+        <nav>
+            <input type="text" id="search_id"/>
+            <button onclick="getdata()">Search</button>
+        </nav>
+        <div id="display"></div>
+    </div>
+    <script src="script.js" />
+</body>
+
+</html>
