@@ -16,8 +16,8 @@ const options={};
 fetch(url,options); */
 
 //====================================fetch response using then and catch ===================
-
-/* const url="https://api.github.com/users";
+/* 
+const url="https://api.github.com/users";
 const options={};
 const pr = fetch(url,options);
 
@@ -61,12 +61,12 @@ pr.then(successCB); */
          console.log("Data fetched Succefuuly",res);
          const pr2=res.json();
          pr2.then((data)=>console.log("users final data",data));
-     }); */
-
+     });
+ */
 
 //=======example of display data of user using user's value under fetched API example=============
-
-/* const getdata = () => {
+/* 
+ const getdata = () => {
 
     const val = document.getElementById("search_id").value || 'ersanjeevsoni';
     fetch(`https://api.github.com/users/${val}`).then((res) => {
@@ -74,26 +74,28 @@ pr.then(successCB); */
             display(data); // this one is when using seperated function to keep code seperate
 
             const myJSON = JSON.stringify(data); // to convert json data to object
-            document.getElementById("display").innerText = myJSON;
+           // document.getElementById("display").innerText = myJSON; // Optional: show full JSON string
 
 
             // will not work bcoz we converted into srting
-            document.getElementById("display").innerText = myJSON[0].login;
-            document.getElementById("display").innerText = data[0].login; // so use here only data
+            //document.getElementById("display").innerText = myJSON.login;
+
+            // Show specific user login
+            document.getElementById("display").innerText = data.login; 
         })
     });
-}  */
+}  */ 
     // create a function to display user data creating tag dynamically
 
-    //above code rewrite using chat gpt
-    const getdata = () => {
+    //rewrite above code 
+   const getdata = () => {
         const val = document.getElementById("search_id").value || 'ersanjeevsoni';
         
         fetch(`https://api.github.com/users/${val}`)
             .then((res) => res.json())
             .then((data) => {
                 // Display the JSON data as a string
-                const myJSON = JSON.stringify(data, null, 2); // Pretty-printed JSON
+                const myJSON = JSON.stringify(data,null,2); // Pretty-printed JSON
                 document.getElementById("display").innerText = myJSON;
     
                 // Display a specific property from the JSON object
@@ -107,7 +109,7 @@ pr.then(successCB); */
                 document.getElementById("display").innerText = `Error: ${error.message}`;
             });
     };
-       
+        
     
     
     
